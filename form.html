@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+   <head><title>My Form Design</title>
+   
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+   <style type="text/css">
+   .colorForm {
+      background: #cae3ee; 
+      border: none;
+      width: 98%;
+      padding: 10px;
+      font-size: 20px;
+      font-weight: 600;
+      border-radius: 50px;
+   }
+   form{
+      text-align: left;
+   }
+
+   input{
+      border-radius: .9 rem;
+   }
+
+   .colorForm form input,
+   .colorForm form select,
+   .colorForm form textarea,
+   .colorForm form label {
+   margin-bottom: 10px;
+   margin-right: 20px;
+   }
+
+   .send, .reset{
+      border-radius: 0.5rem;
+      margin-left: 25px;
+      }
+
+      .send:hover{
+         color: rgb(0, 155, 0);
+         transform: scale(1.1)   
+      }
+      .reset:hover {
+         color: rgb(155, 0, 0); 
+         transform: scale(1.1)   
+   }
+   </style>
+</head>
+
+   <body>
+       
+      <section class="colorForm">
+         <h1 style="text-align: center;"><strong>SUPER SECURE FORM</strong></h1>
+        <div>
+        <form>
+         <figure>
+               <fieldset><legend>Personal Information</legend>
+               Name * <input type="text" placeholder="First name" required><input type="text" placeholder="Last name" required>
+               <br>E-mail * <input type="text" name="email" id="email" required>
+               <br>Age <input type="number">
+               <br>9-digit SSN * <input type="password" placeholder="You can trust us ;-)" minlength="9" maxlength="9" required>
+               <br>Financial Status 
+               <select placeholder="Select"> 
+                  <option style="text-align: center;"><strong>Select</strong></option>
+                  <option>I have money</option>
+                  <option>I never had money</option>
+                  <option>I no longer have money </option>
+               </select>
+               <br>Upload Driver's License, Birth Certificate, or other ID &nbsp;&nbsp;<input type="file">
+               <br>We can use your personal information to make money<input type="checkbox" checked>
+               <br>Date of Completing Form <input type="date">
+               </fieldset>
+
+               <br>Comments: <fieldset><textarea type="" cols="100" rows="6" placeholder="Tell Us More" style="background: transparent; border: none;"></textarea>
+               </fieldset> 
+
+                <br><input type="submit" class="send">
+                <input type="reset" class="reset"> 
+            </figure>
+         </form>
+        </div>
+      </section>
+
+   </body>
+
+</html>
